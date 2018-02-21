@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\Projetos android\FindArrow\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\user\Documents\Projetos android\FindArrow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_577fb07b7d88ae8a5ebcb4061ec8ab8997b4e91d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Documents\Projetos android\FindArrow\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a968ede4f7f799507ec6170cbca8395883677d8a">
+        <dex dex="C:\Users\user\Documents\Projetos android\FindArrow\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_959a6f77b9f6f4a83f284f848a3c93b131506798\classes.dex" />
+    </item>
+
+</items>
