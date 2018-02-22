@@ -2,4 +2,8 @@
 <resources>
     <dimen name="lagura_botao">120dp</dimen>
     <dimen name="altura_botao">70dp</dimen>
+    <dimen name="altura_pontos">75dp</dimen>
+    <dimen name="largura_pontos">40dp</dimen>
+    <dimen name="tam_texto">25sp</dimen>
+    <dimen name="tam_coluna_list_view">60dp</dimen>
 </resources>

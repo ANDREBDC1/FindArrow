@@ -7,130 +7,84 @@
     tools:context="findarrow.rian.andre.com.br.findarrow.MainActivity">
 
     <RelativeLayout
-        android:layout_width="667dp"
-        android:layout_height="323dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_height="match_parent"
-        tools:layout_width="match_parent">
+        android:layout_width="576dp"
+        android:layout_height="271dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="@dimen/lagura_botao"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="18dp"
-            app:srcCompat="@mipmap/ic_launcher" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="@dimen/lagura_botao"
-            android:layout_height="@dimen/altura_botao"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:layout_alignParentBottom="true"
-            android:layout_alignLeft="@+id/imageView9"
-            android:layout_alignStart="@+id/imageView9"
-            android:layout_marginBottom="18dp" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="@dimen/lagura_botao"
-            android:layout_height="@dimen/altura_botao"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:layout_centerVertical="true"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignStart="@+id/imageView"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_alignLeft="@+id/imageView6"
-            android:layout_alignStart="@+id/imageView6"
-            android:layout_alignTop="@+id/imageView5"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp"
-            android:background="@mipmap/ic_launcher"
-            tools:layout_height="@dimen/altura_botao"
-            tools:layout_width="@dimen/lagura_botao" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_alignTop="@+id/imageView2"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
-            app:srcCompat="@mipmap/ic_launcher"
-            tools:layout_centerHorizontal="true"
-            tools:layout_width="@dimen/lagura_botao" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_alignTop="@+id/imageView"
-            android:layout_marginLeft="26dp"
-            android:layout_marginStart="26dp"
-            android:layout_toEndOf="@+id/imageView"
-            android:layout_toRightOf="@+id/imageView"
-            android:background="@mipmap/ic_launcher"
-            tools:layout_height="@dimen/altura_botao"
-            tools:layout_width="@dimen/lagura_botao" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            app:srcCompat="@mipmap/ic_launcher"
-            tools:layout_centerHorizontal="true"
-            tools:layout_width="@dimen/lagura_botao"
-            android:layout_alignBottom="@+id/imageView10"
-            android:layout_alignLeft="@+id/imageView11"
-            android:layout_alignStart="@+id/imageView11"
-            android:layout_marginBottom="7dp" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            android:background="@mipmap/ic_launcher"
-            tools:layout_height="@dimen/altura_botao"
-            tools:layout_width="@dimen/lagura_botao"
-            android:layout_alignTop="@+id/imageView9"
-            android:layout_alignLeft="@+id/imageView6"
-            android:layout_alignStart="@+id/imageView6" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_alignLeft="@+id/imageView7"
-            android:layout_alignStart="@+id/imageView7"
-            android:layout_alignTop="@+id/imageView6"
-            app:srcCompat="@mipmap/ic_launcher"
-            tools:layout_centerHorizontal="true"
-            tools:layout_width="@dimen/lagura_botao" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="@dimen/lagura_botao"
-            android:layout_height="@dimen/altura_botao"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
-            app:srcCompat="@mipmap/ic_launcher"
-            tools:layout_alignTop="@+id/imageView3"
-            android:layout_alignTop="@+id/imageView3"
+        <GridView
+            android:id="@+id/gridViewId"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:columnWidth="70dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="5"
+            android:verticalSpacing="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_below="@+id/editText3"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp" />
 
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="@dimen/altura_pontos"
+            android:layout_height="@dimen/largura_pontos"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:text="Pontos"
+            android:textSize="@dimen/tam_texto"
+            android:layout_alignBaseline="@+id/editText2"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_toRightOf="@+id/editText2"
+            android:layout_toEndOf="@+id/editText2"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="19dp"
+            android:text="Vidas"
+            android:textSize="25sp"
+            tools:textSize="@dimen/tam_texto"
+            tools:ignore="HardcodedText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="@dimen/altura_pontos"
+            android:layout_height="@dimen/largura_pontos"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:textSize="20sp"
+            tools:textAlignment="center"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
