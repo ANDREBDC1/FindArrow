@@ -1,10 +1,13 @@
 package findarrow.rian.andre.com.br.findarrow.adaptador;
 
-import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+
+import java.util.ArrayList;
+
+import findarrow.rian.andre.com.br.findarrow.ImageViewJogo;
 
 /**
  * Created by user on 21/02/2018.
@@ -12,34 +15,32 @@ import android.widget.ImageView;
 
 public class Adaptador extends BaseAdapter {
 
-    private Context context;
-    private int [] lista;
 
-    public  Adaptador(Context context , int[] lista){
+    private ArrayList<ImageViewJogo> listaImageViews;
 
-        this.context = context;
-        this.lista = lista;
+    public  Adaptador(ArrayList<ImageViewJogo> listaImageViews){
+
+        this.listaImageViews = listaImageViews;
 
     }
     @Override
     public int getCount() {
-        return lista.length;
+        return listaImageViews.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return lista[position];
+        return listaImageViews.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return position;
+        return listaImageViews.get(position).getId();
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ImageView ib = new ImageView(context);
-        ib.setImageResource(lista[position]);
+        ImageView ib = listaImageViews.get(position);
         ib.setAdjustViewBounds(true);
         return ib;
     }

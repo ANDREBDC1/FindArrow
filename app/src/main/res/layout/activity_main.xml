@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,16 +23,16 @@
             android:verticalSpacing="10dp"
             android:layout_marginRight="12dp"
             android:layout_marginEnd="12dp"
-            android:layout_below="@+id/editText3"
+            android:layout_below="@+id/editTextPontosId"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="8dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextPontosId"
             android:layout_width="@dimen/altura_pontos"
             android:layout_height="@dimen/largura_pontos"
-            android:layout_alignTop="@+id/editText2"
+            android:layout_alignTop="@+id/editTextVidaId"
             android:layout_marginLeft="21dp"
             android:layout_marginStart="21dp"
             android:layout_toEndOf="@+id/textView4"
@@ -48,10 +48,10 @@
             android:layout_marginStart="24dp"
             android:text="Pontos"
             android:textSize="@dimen/tam_texto"
-            android:layout_alignBaseline="@+id/editText2"
-            android:layout_alignBottom="@+id/editText2"
-            android:layout_toRightOf="@+id/editText2"
-            android:layout_toEndOf="@+id/editText2"
+            android:layout_alignBaseline="@+id/editTextVidaId"
+            android:layout_alignBottom="@+id/editTextVidaId"
+            android:layout_toRightOf="@+id/editTextVidaId"
+            android:layout_toEndOf="@+id/editTextVidaId"
             tools:ignore="HardcodedText" />
 
         <TextView
@@ -70,7 +70,7 @@
             android:layout_alignParentStart="true" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextVidaId"
             android:layout_width="@dimen/altura_pontos"
             android:layout_height="@dimen/largura_pontos"
             android:layout_marginLeft="22dp"
