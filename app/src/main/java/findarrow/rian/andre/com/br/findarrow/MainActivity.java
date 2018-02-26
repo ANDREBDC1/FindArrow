@@ -209,7 +209,7 @@ public class MainActivity extends Activity  implements ImageViewJogo.OnClickList
 
     private void mensagem(String msg) {
 
-        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
     }
 
     private void  habilitarNivel(int nivel){
